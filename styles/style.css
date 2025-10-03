@@ -30,14 +30,36 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  font-family: 'IBM Plex mono', sans-serif;
 }
 
-.header {
+.header, .footer {
   height: 100vh;
   min-height: 375px;
   display: grid;
 }
 
-.main {
+.header {
+  padding: 10px;
+}
 
+.header__theme-menu {
+  justify-self: end;
+}
+
+.header__theme-menu ul li {
+  list-style: none;
+  padding-left: 0;
+}
+
+.title-big {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 116px;
+  line-height: 83%;
+  letter-spacing: 0%;
+}
+
+.main {
+  padding: 40px 10px;
 }
