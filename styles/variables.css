@@ -2,3 +2,16 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  /* Светлая тема */
+  --page-bg-image-light: url('../images/cover-image-light.png');
+  --main-color-light: #353430;
+  
+  /* Тёмная тема */
+  --page-bg-image-dark: url('../images/cover-image-dark.png');
+  --main-color-dark: #F1B2CE;
+  --neon-color: #FF0070;
+  
+  --page-bg-image: var(--page-bg-image-light);
+}
