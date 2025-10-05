@@ -30,8 +30,9 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: 'IBM Plex mono', sans-serif;
+  font-family: var(--main-font-family), sans-serif;
   color: var(--text-color);
+  font-size: var(--main-text-size);
   background-color: var(--bg-color);
 }
 
@@ -55,11 +56,16 @@ html {
 }
 
 .title-big {
-  font-weight: 700;
-  font-style: Bold;
+  font-weight: var(--text-bold);
   font-size: 116px;
   line-height: 83%;
-  letter-spacing: 0%;
+  color: var(--title-color);
+}
+
+.page-description {
+  height: fit-content;
+  background-color: var(--highlight-background);
+  font-weight: var(--text-bold);
 }
 
 .main {

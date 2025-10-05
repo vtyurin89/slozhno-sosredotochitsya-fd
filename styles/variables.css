@@ -4,17 +4,23 @@
 */
 
 :root {
-  /* Светлая тема */
-  /* --page-bg-image-light: url('../images/cover-image-light.png');
-  --main-color-light: #353430; */
-  
-  /* Тёмная тема */
-  /* --page-bg-image-dark: url('../images/cover-image-dark.png');
-  --main-color-dark: #F1B2CE;
-  --neon-color: #FF0070;
-  
-  --page-bg-image: var(--page-bg-image-light); */
 
   --bg-color: #000028;
   --text-color: #F1B2CE;
+  --main-font-family: 'IBM Plex mono';
+  --title-color: #DB00FF;
+  --swadow-color: #FF0070;
+
+  --highlight-background: #FF0070;
+
+  --text-bold: 700;
+  --main-text-size: 18px;
+
+
+
+  --article-bg-color: #6dc1fd;
+  --author-bg-color: #1e1e1e;
+  --author-text-color: #fff;
+  --h2-font-size: clamp(1.875rem, 1.6607rem + 0.9524vw, 2.375rem);
+  --h3-font-size: clamp(1.5rem, 1.3125rem + 0.8333vw, 1.9375rem);
 }

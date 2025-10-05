@@ -8,6 +8,9 @@
   :root {
   --bg-color: #FFF1F7;
   --text-color: #353430;
+  --title-color: #FFC2E6;
+  --swadow-color: #FF8DCB;
+  --highlight-color: #FF8DCB;
   }
 }
 
@@ -20,4 +23,7 @@
   
   --bg-color: #FFF1F7;
   --text-color: #353430;
+  --title-color: #FFC2E6;
+  --swadow-color: #FF8DCB;
+  --highlight-color: #FF8DCB;
 }

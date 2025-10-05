@@ -7,6 +7,10 @@
   :root {
     --bg-color: #000028;
     --text-color: #F1B2CE;
+    --title-color: #DB00FF;
+    --swadow-color: #FF0070;
+    --highlight-color: #FF0070;
+
   }
 }
 
@@ -18,4 +22,8 @@
 
     --bg-color: #000028;
     --text-color: #F1B2CE;
+    --title-color: #DB00FF;
+    --swadow-color: #FF0070;
+    --highlight-color: #FF0070;
+
 }
