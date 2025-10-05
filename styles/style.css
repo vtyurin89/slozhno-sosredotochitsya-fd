@@ -31,6 +31,8 @@ html {
   background-size: cover;
   background-attachment: fixed;
   font-family: 'IBM Plex mono', sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 .header, .footer {
