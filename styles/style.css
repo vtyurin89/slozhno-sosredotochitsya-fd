@@ -25,7 +25,7 @@ html {
 }
 
 .page {
-  background-image: var(--page-bg-image);
+  background-image: var(--bg-image);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,22 +50,55 @@ html {
   justify-self: end;
 }
 
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .header__theme-menu ul li {
   list-style: none;
   padding-left: 0;
 }
 
+.header__theme-menu-button {
+  height: 26px;
+  min-width: 70px;
+  background: transparent;
+  border: none;
+  font-size: inherit;
+  text-transform: lowercase;
+  color: var(--contrast-color);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--contrast-color);
+}
+
 .title-big {
   font-weight: var(--text-bold);
-  font-size: 116px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
   color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .page-description {
   height: fit-content;
   background-color: var(--highlight-background);
+  color: var(--highlight-color);
   font-weight: var(--text-bold);
+}
+
+.title-question {
+  color: var(--contrast-color);
+}
+
+.card-title {
+  background-color: var(--highlight-background);
+  color: var(--highlight-color);
+  font-weight: var(--text-bold);
+  line-height: 23.4px;
 }
 
 .main {

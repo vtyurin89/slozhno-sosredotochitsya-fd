@@ -5,11 +5,14 @@
 */
 @media (prefers-color-scheme: dark) {
   :root {
+    --bg-image: url('../images/cover-image-dark.png');
     --bg-color: #000028;
     --text-color: #F1B2CE;
     --title-color: #DB00FF;
-    --swadow-color: #FF0070;
-    --highlight-color: #FF0070;
+    --accent-color: #FF0070;
+    --highlight-background: #FF0070;
+    --highlight-color: #000028;
+    --contrast-color: #FF0070;
 
   }
 }
@@ -20,10 +23,13 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
+    --bg-image: url('../images/cover-image-dark.png');
     --bg-color: #000028;
     --text-color: #F1B2CE;
     --title-color: #DB00FF;
     --swadow-color: #FF0070;
-    --highlight-color: #FF0070;
+    --highlight-background: #FF0070;
+    --highlight-color: #000028;
+    --contrast-color: #FF0070;
 
 }
