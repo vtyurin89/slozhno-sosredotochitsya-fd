@@ -191,3 +191,33 @@ html {
 .footer .title-big {
   align-self: center;
 }
+
+@media (min-width: 768px) {
+  .page-description {
+    max-width: 364px;
+    justify-self: end;
+  }
+
+  .title-question {
+    margin: 0;
+  }
+
+  .section {
+    display: grid;
+    gap: 20px;
+  }
+
+  .concentration-decrease__reasons,
+  .concentration-decrease__solutions {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .concentration-decrease__causes .title-question {
+    width: 32.42vw;
+  }
+}
+
+
+@media (min-width: 1024px) {
+
+}
