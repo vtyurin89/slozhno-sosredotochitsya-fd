@@ -205,6 +205,10 @@ html {
   margin-bottom: 10px;
 }
 
+.concentration-decrease__pictures .card-title {
+  margin-bottom: 0;
+}
+
 .card-text {
   line-height: 23.4px;
 }
