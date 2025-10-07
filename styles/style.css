@@ -282,7 +282,7 @@ html {
   }
 
   .concentration-decrease__causes .title-question {
-    width: 32.42vw;
+    width: 30.7vw;
   }
 
   .concentration-decrease__pictures .gallery {
@@ -347,5 +347,9 @@ html {
 
   .concentration-decrease__causes .card-wrapper .card {
     flex: 1;
+  }
+
+  .concentration-decrease__causes .title-question {
+    width: 32.42vw;
   }
 }
