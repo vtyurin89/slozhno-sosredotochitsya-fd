@@ -273,7 +273,7 @@ html {
 
   .concentration-decrease__reasons,
   .concentration-decrease__solutions {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 0.96fr 1.98fr;
   }
 
   .concentration-decrease__causes .title-question {
