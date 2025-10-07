@@ -179,12 +179,12 @@ html {
   margin-bottom: 10px;
 }
 
-.image-wrapper {
+.gallery {
   display: grid;
   gap: 10px;
 }
 
-.image-wrapper img {
+.gallery img {
   width: 100%;
 }
 
@@ -214,6 +214,37 @@ html {
 
   .concentration-decrease__causes .title-question {
     width: 32.42vw;
+  }
+
+  .concentration-decrease__pictures .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr fit-content();
+    gap: 20px;
+  }
+
+  .gallery__image {
+    inline-size: 100%;
+    block-size: 100%;
+    max-block-size: 100%;
+    object-fit: cover;
+  }
+
+  .gallery__image:nth-child(1) {
+    grid-column: span 2;
+  }
+
+  .gallery__image:nth-child(2) {
+    grid-column: 3;
+    grid-row: span 2;
+  }
+
+  .gallery__image:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2 / 4;
+  }
+
+  .gallery__image:nth-child(5) {
+    grid-column: 2 / 4;
   }
 }
 

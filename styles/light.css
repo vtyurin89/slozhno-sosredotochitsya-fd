@@ -15,6 +15,10 @@
   --highlight-color: #353430;
   --contrast-color: #353430;
   }
+
+  .theme-auto .rec-label {
+    display: none;
+  }
 }
 
 :root.theme-light {
