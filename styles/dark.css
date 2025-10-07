@@ -31,5 +31,8 @@
     --highlight-background: #FF0070;
     --highlight-color: #000028;
     --contrast-color: #FF0070;
+}
 
+.theme-dark .header__theme-menu-button:hover {
+  border: 1px solid #FF007066;
 }

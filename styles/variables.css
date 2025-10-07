@@ -7,7 +7,7 @@
   --bg-image: url('../images/cover-image-dark.png');
   --bg-color: #000028;
   --text-color: #F1B2CE;
-  --main-font-family: 'IBM Plex mono';
+  --main-font-family: 'IBM Plex mono', sans-serif;
   --title-color: #DB00FF;
   --accent-color: #FF0070;
 
@@ -18,6 +18,7 @@
   --text-bold: 700;
   --text-regular: 400;
   --main-text-size: 18px;
+  --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 
 
   --article-bg-color: #6dc1fd;
@@ -25,4 +26,10 @@
   --author-text-color: #fff;
   --h2-font-size: clamp(1.875rem, 1.6607rem + 0.9524vw, 2.375rem);
   --h3-font-size: clamp(1.5rem, 1.3125rem + 0.8333vw, 1.9375rem);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  }
 }
