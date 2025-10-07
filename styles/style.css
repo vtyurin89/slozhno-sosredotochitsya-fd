@@ -31,9 +31,13 @@ html {
 }
 
 .link:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  border-bottom: 1px solid var(--text-color);
 }
 
+.link:focus-visible {
+  outline: 1px solid var(--text-color);
+}
 
 .page {
   background-image: var(--bg-image);
@@ -327,5 +331,13 @@ html {
 
   .page-description {
     max-width: 491px;
+  }
+
+  .concentration-decrease__causes .card-wrapper {
+    flex-direction: row;
+  }
+
+  .concentration-decrease__causes .card-wrapper .card {
+    flex: 1;
   }
 }
