@@ -188,6 +188,8 @@ html {
 .title-question {
   color: var(--contrast-color);
   margin-bottom: 20px;
+  line-height: 23.4px;
+  letter-spacing: 0%;
 }
 
 .card-wrapper {
