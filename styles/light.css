@@ -31,16 +31,13 @@
   --bg-color: #FFF1F7;
   --text-color: #353430;
   --title-color: #FFC2E6;
-  --swadow-color: #FF8DCB;
+  --accent-color: #FF8DCB;
   --highlight-background: #FF8DCB;
   --highlight-color: #353430;
   --contrast-color: #353430;
+  --button-hover-color: #32312D66;
 }
 
 .theme-light .rec-label {
   display: none;
-}
-
-.theme-light .header__theme-menu-button:hover {
-  border: 1px solid #32312D66;
 }

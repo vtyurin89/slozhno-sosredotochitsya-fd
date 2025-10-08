@@ -3,19 +3,6 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-image: url('../images/cover-image-dark.png');
-    --bg-color: #000028;
-    --text-color: #F1B2CE;
-    --title-color: #DB00FF;
-    --accent-color: #FF0070;
-    --highlight-background: #FF0070;
-    --highlight-color: #000028;
-    --contrast-color: #FF0070;
-
-  }
-}
 
 :root.theme-dark {
   /* сохраните этот селектор в приведённом виде.
@@ -27,14 +14,9 @@
     --bg-color: #000028;
     --text-color: #F1B2CE;
     --title-color: #DB00FF;
-    --swadow-color: #FF0070;
     --highlight-background: #FF0070;
     --highlight-color: #000028;
     --contrast-color: #FF0070;
     --accent-color: #FF0070;
-
-}
-
-.theme-dark .header__theme-menu-button:hover {
-  border: 1px solid #FF007066;
+    --button-hover-color: #FF007066;
 }

@@ -1,31 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
-  font-size: 1em;
-}
-
-html {
-  block-size: 100%;
-}
 
 .link {
   color: inherit;
@@ -49,16 +23,10 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: var(--main-font-family), sans-serif;
+  font-family: var(--main-font-family), monospace;
   color: var(--text-color);
   font-size: var(--main-text-size);
   background-color: var(--bg-color);
-}
-
-.header, .footer {
-  min-height: 668px;
-  height: 178.13vw;
-  display: grid;
 }
 
 .header {
@@ -91,12 +59,13 @@ html {
   text-transform: lowercase;
   line-height: 18px;
   color: var(--contrast-color);
-  font-family: var(--main-font-family), sans-serif;
+  font-family: var(--main-font-family), monospace;
   letter-spacing: 0px;
 }
 
 .header__theme-menu-button:hover {
   cursor: pointer;
+  border: 1px solid var(--button-hover-color);
 }
 
 .header__theme-menu-button:focus-visible {
@@ -133,17 +102,16 @@ html {
 
 .decorated-zone {
   position: relative;
+  min-height: 375px;
+  height: 100vh;
+  display: grid;
 }
 
-.decorated-zone::before,
-.decorated-zone::after {
+.decorated-zone::before {
   content: "";
   position: absolute;
   width: 25px;
   height: 25px;
-}
-
-.decorated-zone::before {
   top: 10px;
   right: 10px;
   border-top: 1px solid var(--contrast-color);
@@ -151,6 +119,10 @@ html {
 }
 
 .decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
   bottom: 10px;
   left: 10px;
   border-bottom: 1px solid var(--contrast-color);
@@ -193,7 +165,7 @@ html {
   color: var(--contrast-color);
   margin-bottom: 20px;
   line-height: 23.4px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .card-wrapper {
@@ -208,7 +180,7 @@ html {
 }
 
 .concentration-decrease__pictures .card-title {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .card-text {
@@ -230,10 +202,6 @@ html {
 }
 
 @media (min-width: 768px) {
-  .header, .footer {
-    width: 100%;
-    height: 133.33vw;
-  }
 
   .header {
     padding: 20px;
@@ -242,6 +210,10 @@ html {
 
   .header .title-big {
     margin-left: -20px;
+  }
+
+  .decorated-zone {
+    min-height: 1024px;
   }
 
   .decorated-zone::before {
@@ -282,13 +254,16 @@ html {
     margin-bottom: 80px;
   }
 
-  .concentration-decrease__reasons,
-  .concentration-decrease__solutions {
+  .section:not(.concentration-decrease__causes):not(.concentration-decrease__pictures) {
     grid-template-columns: 0.96fr 1.98fr;
-  }
+  } 
 
   .concentration-decrease__causes .title-question {
     width: 30.7vw;
+  }
+
+  .concentration-decrease__pictures .card-title {
+    margin-bottom: 0;
   }
 
   .concentration-decrease__pictures .gallery {
@@ -325,9 +300,8 @@ html {
 
 
 @media (min-width: 1024px) {
-  .header, .footer {
-    width: 100%;
-    height: 75vw;
+  .decorated-zone {
+    min-height: 768px;
   }
 
   .header {

@@ -1,5 +1,31 @@
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+}
+
+html {
+  block-size: 100%;
+}
 
 body {
   min-inline-size: 375px;
