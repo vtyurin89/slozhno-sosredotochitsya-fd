@@ -20,13 +20,6 @@
   --text-regular: 400;
   --main-text-size: 18px;
   --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-
-
-  --article-bg-color: #6dc1fd;
-  --author-bg-color: #1e1e1e;
-  --author-text-color: #fff;
-  --h2-font-size: clamp(1.875rem, 1.6607rem + 0.9524vw, 2.375rem);
-  --h3-font-size: clamp(1.5rem, 1.3125rem + 0.8333vw, 1.9375rem);
 }
 
 @media (min-width: 768px) {

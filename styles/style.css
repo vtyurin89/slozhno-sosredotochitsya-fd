@@ -102,7 +102,7 @@
 
 .decorated-zone {
   position: relative;
-  min-height: 375px;
+  min-height: 668px;
   height: 100vh;
   display: grid;
 }
@@ -212,10 +212,6 @@
     margin-left: -20px;
   }
 
-  .decorated-zone {
-    min-height: 1024px;
-  }
-
   .decorated-zone::before {
     top: 20px;
     right: 20px;
@@ -268,7 +264,6 @@
 
   .concentration-decrease__pictures .gallery {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr fit-content();
     gap: 20px;
   }
 
@@ -300,10 +295,6 @@
 
 
 @media (min-width: 1024px) {
-  .decorated-zone {
-    min-height: 768px;
-  }
-
   .header {
     grid-template-rows: 41% 18% 1fr;
   }
@@ -320,6 +311,10 @@
   .page-description {
     max-width: 491px;
   }
+
+  .section:not(.concentration-decrease__causes):not(.concentration-decrease__pictures) {
+    grid-template-columns: 1fr 2.06fr;
+  } 
 
   .concentration-decrease__causes .card-wrapper {
     flex-direction: row;
