@@ -255,7 +255,7 @@
   }
 
   .section:not(.concentration-decrease__causes):not(.concentration-decrease__pictures) {
-    grid-template-columns: 0.96fr 1.98fr;
+    grid-template-columns: 1fr 2fr;
   } 
 
   .concentration-decrease__causes .title-question {
